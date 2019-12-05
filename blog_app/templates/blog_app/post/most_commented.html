@@ -1,0 +1,8 @@
+{% for post in most_commented %}
+    <ul>
+        <li>
+            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+            <p>Total comments: {{ post.total_comments }}</p>
+        </li>
+    </ul>
+{% endfor %}
