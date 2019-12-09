@@ -97,3 +97,8 @@ input[type=submit] {
 span.helptext{
     visibility: hidden;
 }
+
+.text {
+    width: 852px;
+    word-break: break-word;
+}

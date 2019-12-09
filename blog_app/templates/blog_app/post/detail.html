@@ -3,7 +3,13 @@
 {% block content %}
  <h1>{{ post.title }}</h1>
  <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
- {{ post.body|linebreaks }}
+
+<div class="text">
+   {{ post.body|linebreaks }}
+</div>
+
+
+
 
  <h3>Related posts:</h3>
  {% for related_post in similar_posts %}

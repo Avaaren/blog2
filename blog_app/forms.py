@@ -14,6 +14,10 @@ class CommentForm(forms.ModelForm):
 
 		
 class PostForm(forms.ModelForm):
+	tags = forms.CharField(required = False, widget= forms.TextInput(attrs = {
+			'class': 'form-control',
+			'placeholder': 'Tags'
+			}))
 	class Meta: 
 		model = Post
 		fields = ('title', 'body', 'tags')
@@ -31,3 +35,7 @@ class PostForm(forms.ModelForm):
 			'placeholder': 'Tags'
 			}),
 		}
+		
+
+class SearchForm(forms.Form):
+	query = forms.CharField()

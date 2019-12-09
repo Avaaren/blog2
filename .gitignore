@@ -1,2 +1,2 @@
-__pycache__/
-*.db
+/blog/blog_app/templatetags/__pycache__
+/blog/blog_app/__pycache__
